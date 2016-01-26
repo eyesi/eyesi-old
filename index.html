@@ -1,23 +1,38 @@
----
-layout: default
----
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.scss">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("#shop").click(function(){
+                $(".toggle").toggle();
+            });
+        });
+    </script>
+</head>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="wrapper">
+<header>
+    <nav>
+        <div class="left nav_button" id="shop">Shop</div>
+        <div class="right nav_button">Bag</div>
+    </nav>
+    <div class="toggle" style="display: none;">
+        <div class="tags">
+            <ul class="tag_list">
+                <li><a href="#" class="tag_button">All</a></li>
+                <li><a href="#" class="tag_button">Linen</a></li>
+                <li><a href="#" class="tag_button">Surfaces</a></li>
+                <li><a href="#" class="tag_button">Tables</a></li>
+            </ul>
+            <ul class="tag_list">
+                <li><a href="#" class="tag_button">Leather</a></li>
+                <li><a href="#" class="tag_button">Textile</a></li>
+                <li><a href="#" class="tag_button">Timber</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
 </div>
