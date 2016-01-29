@@ -8,9 +8,7 @@
     padding: 0;
     border: 0;
     outline: 0;
-    font-family: 'Graphik', 'Arial', 'Roboto', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
+    vertical-align: baseline;
 }
 
 ul {
@@ -25,14 +23,14 @@ a {
 /* Nav */
 
 nav a {
-    padding: 48px;
+    padding: $spacing-unit;
     cursor: pointer;
-    z-index: 2;
+    z-index: $front;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: $large) {
     nav a {
-        padding: 32px;
+        padding: $spacing-unit-large;
     }
 }
 
@@ -57,18 +55,17 @@ nav a {
     left: 0;
     width: 100%;
     height: 100%;
-    padding-top: 128px;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-top: $spacing-unit-large * 4;
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
     background-color: #eee;
-    z-index: 1;
+    z-index: $middle;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: $large) {
     .toggle {
         width: 50%;
-        padding-top: 128px;
-        padding-left: 32px;
+        padding-left: $spacing-unit-large;
         padding-right: 0;
     }
 }
@@ -82,7 +79,7 @@ nav a {
     height: 100%;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: $large) {
     .toggle_esc {
         display: block;
     }
@@ -91,7 +88,6 @@ nav a {
 .tag_list {
     width: 49%;
     display: inline-block;
-    font-size: 1.6em;
 }
 
 .toggle footer {
@@ -100,22 +96,26 @@ nav a {
     padding-left: 0;
 }
 
+.top {
+    vertical-align: top;
+}
+
 /* Footer */
 
 footer {
-    padding: 48px;
+    padding: $spacing-unit;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: $large) {
     footer {
-        padding: 32px;
+        padding: $spacing-unit-large;
     }
 }
 
 /* Tests */
 
 .block {
-    margin-top: 128px;
+    margin-top: $spacing-unit-large * 4;
     width: 50%;
     height: 1000px;
     background-color: cyan;
