@@ -1,0 +1,7 @@
+---
+layout: post
+title:  I'm Electric Tea Towel
+tag: Linen
+permalink: /i'melectric
+---
+Content, content, content.

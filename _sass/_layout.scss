@@ -8,42 +8,55 @@
     padding: 0;
     border: 0;
     outline: 0;
-    vertical-align: top;
 }
 
 ul {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: $text-color;
+.container {
+    width: 100%;
+    max-width: 1440px!important;
+    margin: 0 auto;
 }
 
 /* Nav */
 
-nav a {
-    padding: $spacing-unit;
-    cursor: pointer;
+nav .left a {
+    padding: 1.5em 1.5em 1.5em 0;
+}
+
+nav .right a {
+    padding: 1.5em 0 1.5em 1.5em;
+}
+
+.left, .right {
+    position: fixed;
+    top: 0;
+    padding-top: $spacing-unit;
     z-index: $front;
 }
 
 @media screen and (min-width: $large) {
-    nav a {
-        padding: $spacing-unit-large;
+    .left, .right {
+        padding-top: $spacing-unit-large;
+    }
+    .left {
+        padding-left: $spacing-unit-large!important;
+    }
+    .right {
+        padding-right: $spacing-unit-large!important;
     }
 }
 
 .left {
-    position: fixed;
-    top: 0;
     left: 0;
+    padding-left: $spacing-unit;
 }
 
 .right {
-    position: fixed;
-    top: 0;
     right: 0;
+    padding-right: $spacing-unit;
 }
 
 /* Toggle */
@@ -63,37 +76,37 @@ nav a {
 }
 
 .toggle {
-    z-index: $middle;
+    z-index: $mid;
 }
 
 .toggle_background {
-    background-color: #eee;
-    opacity: 0.9;
     z-index: $back;
 }
 
 @media screen and (min-width: $large) {
     .toggle, .toggle_background {
-        width: 25%;
         padding-top: $spacing-unit-large * 3;
         padding-left: $spacing-unit-large;
-        padding-right: 0;
     }
 }
 
-.toggle_esc {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 75%;
-    height: 100%;
+.toggle_list li {
+    display: inline-block;
+    float: left;
+    margin: 0 0.5em 0.5em 0;
 }
 
-@media screen and (min-width: $large) {
-    .toggle_esc {
-        display: block;
-    }
+.toggle_list a {
+    display: block;
+    padding: 0 0.666em;
+    line-height: 2.135em;
+    height: 2em;
+    border-radius: 1.675em;
+    -o-transition: $transition-speed;
+    -ms-transition: $transition-speed;
+    -moz-transition: $transition-speed;
+    -webkit-transition: $transition-speed;
+    transition: $transition-speed;
 }
 
 .toggle footer {
@@ -105,6 +118,19 @@ nav a {
 @media screen and (max-height: 480px) {
     .toggle footer {
         display: none;
+    }
+}
+
+/* Text */
+
+.info, .title {
+    padding: $spacing-unit * 3;
+}
+
+@media screen and (min-width: $large) {
+    .info, .title {
+        padding: $spacing-unit-large * 3;
+        margin-left: 50%;
     }
 }
 
@@ -129,12 +155,4 @@ footer {
     .footer_replace {
         height: 63px + ($spacing-unit-large * 2);
     }
-}
-
-/* Tests */
-
-.block {
-    width: 50%;
-    height: 1000px;
-    background-color: cyan;
 }

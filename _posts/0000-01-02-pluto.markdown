@@ -1,0 +1,7 @@
+---
+layout: post
+title:  Pluto Trivet
+tag: Surfaces
+permalink: /pluto
+---
+Content, content, content.

@@ -1,0 +1,24 @@
+img {
+    width: 100%;
+}
+
+.image {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media screen and (min-width: $large) {
+    .image {
+        width: 50%;
+    }
+}
+
+.padded {
+    padding-left: $spacing-unit * 2;
+    padding-right: $spacing-unit * 2;
+}
+
+.margins {
+    margin-top: $spacing-unit * 5;
+    margin-bottom: $spacing-unit * 3;
+}

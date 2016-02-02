@@ -1,4 +1,9 @@
-* {
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a, p, h1 {
     font-family: 'Graphik', 'Arial', 'Roboto', sans-serif;
     font-weight: $font-weight;
     line-height: $line-height;
@@ -8,6 +13,10 @@ nav, footer {
     font-size: $font-size;
 }
 
-.toggle_list {
-    font-size: $font-size-2;
+.toggle_list, h1 {
+    font-size: $font-size-huge;
+}
+
+p {
+    font-size: $font-size-mid;
 }

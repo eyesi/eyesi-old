@@ -1,0 +1,17 @@
+a, p, h1 {
+    color: $text-color;
+}
+
+.toggle_list a {
+    background: $soft-color-2;
+    color: $text-color-light;
+}
+
+.toggle_list a:hover {
+    background: $highlight-color;
+}
+
+.toggle_background {
+    background-color: $soft-color;
+    opacity: 0.9;
+}
