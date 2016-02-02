@@ -1,12 +1,9 @@
 ---
 layout: default
 ---
-<header class="post-header">
-<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-</header>
-
-<div class="post-content" itemprop="articleBody">
-{{ content }}
+<div class="text_block top">
+    <p class="post_title title">{{ page.title }}<br>by <a>{{ page.author }}</a></p>
+    <div class="price"><p>{{ page.price }}</p></div>
+    <div class="add_button"><a>Add to bag <i class="twa twa-sparkles"></i></a></div>
+    {{ content }}
 </div>
-
-</article>

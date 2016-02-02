@@ -3,7 +3,7 @@ a {
     cursor: pointer;
 }
 
-a, p, h1 {
+a, p {
     font-family: 'Graphik', 'Arial', 'Roboto', sans-serif;
     font-weight: $font-weight;
     line-height: $line-height;
@@ -13,10 +13,38 @@ nav, footer {
     font-size: $font-size;
 }
 
-.toggle_list, h1 {
+p, .tag_list, .add_button {
+    font-size: $font-size-mid;
+}
+
+.toggle_list, {
     font-size: $font-size-huge;
 }
 
-p {
-    font-size: $font-size-mid;
+.tag_title, .post_title {
+    font-size: $font-size-massive;
+}
+
+.price, .add_button {
+    display: inline-block;
+    margin: 0 0.5em 0 0;
+}
+
+.toggle_list li {
+    display: inline-block;
+    float: left;
+    margin: 0 0.5em 0.5em 0;
+}
+
+.toggle_list a, .add_button a {
+    display: block;
+    padding: 0 0.666em;
+    line-height: 2.135em;
+    height: 2em;
+    border-radius: 1.675em;
+    -o-transition: $transition-speed;
+    -ms-transition: $transition-speed;
+    -moz-transition: $transition-speed;
+    -webkit-transition: $transition-speed;
+    transition: $transition-speed;
 }

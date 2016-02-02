@@ -20,6 +20,16 @@ ul {
     margin: 0 auto;
 }
 
+.top {
+    padding-top: $spacing-unit * 3;
+}
+
+@media screen and (min-width: $large) {
+    .top {
+        padding-top: $spacing-unit-large * 3;
+    }
+}
+
 /* Nav */
 
 nav {
@@ -27,6 +37,7 @@ nav {
     width: 100%;
     max-width: $max-width;
     z-index: $front;
+    overflow: scroll;
 }
 
 .left a {
@@ -38,35 +49,28 @@ nav {
 }
 
 .left, .right {
-    padding-top: $spacing-unit;
+    padding: $spacing-unit;
 }
 
 @media screen and (min-width: $large) {
     .left, .right {
-        padding-top: $spacing-unit-large;
-    }
-    .left {
-        padding-left: $spacing-unit-large!important;
-    }
-    .right {
-        padding-right: $spacing-unit-large!important;
+        padding: $spacing-unit-large;
     }
 }
 
 .left {
     float: left;
-    padding-left: $spacing-unit;
 }
 
 .right {
     float: right;
-    padding-right: $spacing-unit;
 }
 
 /* Toggle */
 
 .toggle {
     display: none;
+    height: 100%;
     padding-top: $spacing-unit * 3;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
@@ -93,25 +97,6 @@ nav {
     z-index: $back;
 }
 
-.toggle_list li {
-    display: inline-block;
-    float: left;
-    margin: 0 0.5em 0.5em 0;
-}
-
-.toggle_list a {
-    display: block;
-    padding: 0 0.666em;
-    line-height: 2.135em;
-    height: 2em;
-    border-radius: 1.675em;
-    -o-transition: $transition-speed;
-    -ms-transition: $transition-speed;
-    -moz-transition: $transition-speed;
-    -webkit-transition: $transition-speed;
-    transition: $transition-speed;
-}
-
 .toggle footer {
     position: fixed;
     bottom: 0;
@@ -126,14 +111,25 @@ nav {
 
 /* Text */
 
-.info, .title {
-    padding: $spacing-unit * 3;
+.text_block, .tag_list {
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
 }
 
 @media screen and (min-width: $large) {
-    .info, .title {
-        padding: $spacing-unit-large * 3;
-        margin-left: 50%;
+    .text_block, .tag_list {
+        padding-left: $spacing-unit-large;
+        padding-right: $spacing-unit-large;
+    }
+}
+
+.title {
+    padding-bottom: $spacing-unit;
+}
+
+@media screen and (min-width: $large) {
+    .title {
+        padding-bottom: $spacing-unit-large;
     }
 }
 
