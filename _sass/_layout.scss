@@ -1,6 +1,6 @@
 /* General */
 
-*, *:before, *:after {
+* {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -32,11 +32,14 @@ ul {
 
 /* Nav */
 
-nav {
+.top_nav {
+    z-index: $top;
+}
+
+.top_nav, .toggle {
     position: fixed;
     width: 100%;
     max-width: $max-width;
-    z-index: $front;
     overflow: scroll;
 }
 
@@ -74,14 +77,16 @@ nav {
     padding-top: $spacing-unit * 3;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
-    padding-bottom: $spacing-unit;
-    z-index: $mid;
+    padding-bottom: $spacing-unit - 10.5px;
+    z-index: $front;
 }
 
 @media screen and (min-width: $large) {
     .toggle {
         padding-top: $spacing-unit-large * 3;
         padding-left: $spacing-unit-large;
+        padding-right: $spacing-unit-large;
+        padding-bottom: $spacing-unit-large - 10.5px;
     }
 }
 
@@ -111,13 +116,13 @@ nav {
 
 /* Text */
 
-.text_block, .tag_list {
+.text, .tag_list {
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
 }
 
 @media screen and (min-width: $large) {
-    .text_block, .tag_list {
+    .text, .tag_list {
         padding-left: $spacing-unit-large;
         padding-right: $spacing-unit-large;
     }
