@@ -3,10 +3,10 @@
 @charset "utf-8";
 
 $font-family: 'Graphik', 'Arial', 'Roboto', sans-serif;
-$font-size: 14px;
-$font-size-mid: 21px;
-$font-size-huge: 21px;
-$font-size-massive: 70px;
+$font-size: 13px;
+$font-size-mid: 19px;
+$font-size-huge: 26px;
+$font-size-massive: 38px;
 $font-weight: 400;
 $line-height: 1.5;
 
@@ -17,11 +17,11 @@ $spacing-unit-large: 42px;
 $max-width: 1440px;
 
 // Colors
-$text-color: #555;
+$text-color: #43474f;
 $text-color-light: #fff;
 
-$soft-color: #eee;
-$soft-color-2: #ccc;
+$soft-color: #e9edf2;
+$soft-color-2: #c0c6cc;
 
 $highlight-color: #ffcc33;
 
@@ -36,5 +36,15 @@ $front: 3;
 $mid: 2;
 $back: 1;
 $bottom: 0;
+
+//Clearfix
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after { clear: both; }
+}
 
 @import "color", "images", "layout", "type";

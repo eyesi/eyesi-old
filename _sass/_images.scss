@@ -1,35 +1,18 @@
 img {
+    display: block;
     width: 100%;
     height: auto;
 }
 
-.image {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-@media screen and (min-width: $large) {
-    .image {
-        width: 49%;
-    }
-}
-
-
-.image_one {
-    width: 34%;
-}
-
-.ratio_set {
-    padding-top: 66%;
+.fullscreen {
     width: 100%;
-    height: 0;
+    height: 100%;
+    z-index: $bottom;
 }
 
-.ratio_set div {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
+.head_image {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
 }

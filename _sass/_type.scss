@@ -13,7 +13,7 @@ nav, footer {
     font-size: $font-size;
 }
 
-p, .tag_list, .add_button {
+p, .tag_list, .add_button, .post_title {
     font-size: $font-size-mid;
 }
 
@@ -21,7 +21,7 @@ p, .tag_list, .add_button {
     font-size: $font-size-huge;
 }
 
-.tag_title, .post_title {
+.tag_title {
     font-size: $font-size-massive;
 }
 
@@ -39,7 +39,7 @@ p, .tag_list, .add_button {
 .toggle_list a, .add_button a {
     display: block;
     padding: 0 0.666em;
-    line-height: 2.135em;
+    line-height: 2em;
     height: 2em;
     border-radius: 1.675em;
     -o-transition: $transition-speed;
