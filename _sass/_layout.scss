@@ -89,6 +89,7 @@ ul {
 @media screen and (min-width: $large) {
     .toggle {
         width: 50%;
+        border-right: solid 5px #fff;
         padding-top: $spacing-unit-large * 3;
         padding-left: $spacing-unit-large;
         padding-right: $spacing-unit-large;
@@ -136,7 +137,9 @@ ul {
         height: 100%;
         position: fixed;
         top: 0;
+        bottom: 0;
         right: 0;
+        z-index: $mid;
     }
 }
 

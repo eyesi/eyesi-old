@@ -48,3 +48,7 @@ p, .tag_list, .add_button, .post_title {
     -webkit-transition: $transition-speed;
     transition: $transition-speed;
 }
+
+.toggle_list a {
+    line-height: 2.135em;
+}
