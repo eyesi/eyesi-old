@@ -89,7 +89,7 @@ ul {
 @media screen and (min-width: $large) {
     .toggle {
         width: 50%;
-        border-right: solid 5px #fff;
+        border-right: solid $small-gap #fff;
         padding-top: $spacing-unit-large * 3;
         padding-left: $spacing-unit-large;
         padding-right: $spacing-unit-large;
@@ -145,10 +145,20 @@ ul {
 
 /* Text */
 
-.overlay {
-    position: absolute;
-    top: 0;
-    z-index: $back;
+.post_info {
+    padding-top: $spacing-unit * 2 - $small-gap;
+    padding-bottom: $spacing-unit * 2;
+}
+
+
+@media screen and (min-width: $large) {
+    .post_info {
+        position: absolute;
+        top: 0;
+        z-index: $back;
+        padding-top: $spacing-unit-large * 3;
+        padding-bottom: $spacing-unit-large;
+    }
 }
 
 .text, .tag_list {
@@ -169,16 +179,6 @@ ul {
 
 @media screen and (min-width: $large) {
     .title {
-        padding-bottom: $spacing-unit-large;
-    }
-}
-
-.price {
-    padding-bottom: $spacing-unit;
-}
-
-@media screen and (min-width: $large) {
-    .price {
         padding-bottom: $spacing-unit-large;
     }
 }

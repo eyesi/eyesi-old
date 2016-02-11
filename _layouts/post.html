@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-<div class="text overlay top">
+<div class="fullscreen">
+    <div class="head_image"><img src="{{ page.image_one }}"></div>
+</div>
+<div class="block text post_info">
     <p class="title post_title">{{ page.title }}<br>by <a>{{ page.author }}</a></p>
     <div class="price"><p>{{ page.price }}</p></div>
     <div class="add_button"><a>Add to bag <i class="twa twa-sparkles"></i></a></div>
-</div>
-<div class="fullscreen">
-    <div class="head_image"><img src="{{ page.image_one }}"></div>
 </div>
 <div class="block"><img src="{{ page.image_two }}"></div>
 {{ content }}
