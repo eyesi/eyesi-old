@@ -13,20 +13,21 @@ header, footer {
     font-size: $font-size;
 }
 
-p {
+p, .add_button {
     font-size: $font-size-mid;
 }
 
-.toggle_list, .add_button {
+.toggle_list {
     font-size: $font-size-huge;
 }
 
-.tag_title, .post_title, .price {
+.tag_title, .post_title {
     font-size: $font-size-massive;
 }
 
-.add_button {
+.price, .add_button {
     display: inline-block;
+    margin: 0 0.5em 0 0;
 }
 
 .toggle_list li {
