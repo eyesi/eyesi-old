@@ -57,7 +57,7 @@ ul {
     padding-top: $spacing-unit;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
-    padding-bottom: 57px + ($spacing-unit * 2) - 19px;
+    padding-bottom: 60px + ($spacing-unit * 2) - 20px;
     z-index: $front;
     overflow: scroll;
 }
@@ -69,7 +69,7 @@ ul {
         padding-top: $spacing-unit-large;
         padding-left: $spacing-unit-large;
         padding-right: $spacing-unit-large;
-        padding-bottom: 57px + ($spacing-unit-large * 2) - 19px;
+        padding-bottom: 60px + ($spacing-unit-large * 2) - 20px;
     }
 }
 
@@ -98,7 +98,7 @@ ul {
         display: none;
     }
     .toggle {
-        padding-bottom: $spacing-unit - 19px;
+        padding-bottom: $spacing-unit - 20px;
     }
 }
 
@@ -127,17 +127,17 @@ ul {
     .post_info {
         position: absolute;
         top: 0;
-        padding-top: $spacing-unit-large * 3 + 19px;
+        padding-top: $spacing-unit-large * 3 + 20px;
     }
 }
 
 .top_spacing {
-    padding-top: $spacing-unit * 2 + 19px;
+    padding-top: $spacing-unit * 2 + 20px;
 }
 
 @media screen and (min-width: $large) {
     .top_spacing {
-        padding-top: $spacing-unit-large * 2 + 19px;
+        padding-top: $spacing-unit-large * 2 + 20px;
     }
 }
 
@@ -153,12 +153,12 @@ ul {
     }
 }
 
-.title_spacing, .price {
+.title_spacing {
     padding-bottom: $spacing-unit;
 }
 
 @media screen and (min-width: $large) {
-    .title_spacing, .price {
+    .title_spacing {
         padding-bottom: $spacing-unit-large;
     }
 }
@@ -178,12 +178,12 @@ footer {
 
 .footer_replace {
     display: none;
-    height: 57px + ($spacing-unit * 2);
+    height: 60px + ($spacing-unit * 2);
     clear: both;
 }
 
 @media screen and (min-width: $large) {
     .footer_replace {
-        height: 57px + ($spacing-unit-large * 2);
+        height: 60px + ($spacing-unit-large * 2);
     }
 }
