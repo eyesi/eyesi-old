@@ -9,25 +9,24 @@ a, p {
     line-height: $line-height;
 }
 
-nav, footer {
+header, footer {
     font-size: $font-size;
 }
 
-p, .tag_list, .add_button, .post_title {
+p {
     font-size: $font-size-mid;
 }
 
-.toggle_list, {
+.toggle_list, .add_button {
     font-size: $font-size-huge;
 }
 
-.tag_title {
+.tag_title, .post_title, .price {
     font-size: $font-size-massive;
 }
 
-.price, .add_button {
+.add_button {
     display: inline-block;
-    margin: 0 0.5em 0 0;
 }
 
 .toggle_list li {

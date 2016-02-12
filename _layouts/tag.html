@@ -1,10 +1,8 @@
 ---
 layout: default
 ---
-<div class="text top">
-    <p class="title tag_title">{{ page.tag }}</p>
-</div>
-<div class="tags">
+<div class="top_spacing text_spacing">
+    <p class="title_spacing tag_title">{{ page.tag }}</p>
     <ul class="tag_list">
     {% for post in site.tags[page.tag] %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
