@@ -117,14 +117,14 @@ ul {
 
 /* Text */
 
-.post_info {
-    padding-top: $spacing-unit * 2;
-    padding-bottom: $spacing-unit * 2;
+.post_text {
+    padding-top: $spacing-unit * 1.5;
+    padding-bottom: $spacing-unit * 1.5;
     z-index: $back;
 }
 
 @media screen and (min-width: $large) {
-    .post_info {
+    .post_text {
         position: absolute;
         top: 0;
         padding-top: $spacing-unit-large * 3 + 20px;
@@ -141,13 +141,13 @@ ul {
     }
 }
 
-.text_spacing {
+.margins {
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
 }
 
 @media screen and (min-width: $large) {
-    .text_spacing {
+    .margins {
         padding-left: $spacing-unit-large;
         padding-right: $spacing-unit-large;
     }

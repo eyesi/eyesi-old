@@ -5,5 +5,5 @@ img {
 }
 
 .top_image {
-    z-index: $bottom;
+    border-bottom: solid $small-gap #fff;
 }

@@ -26,8 +26,14 @@ p, .add_button {
 }
 
 .add_button {
+    padding-top: $spacing-unit;
     display: inline-block;
-    margin: 0.45em 0 0 0;
+}
+
+@media screen and (min-width: $large) {
+    .add_button {
+        padding-top: $spacing-unit-large;
+    }
 }
 
 .toggle_list li {
@@ -38,17 +44,13 @@ p, .add_button {
 
 .toggle_list a, .add_button a {
     display: block;
-    padding: 0 0.666em;
-    line-height: 2em;
+    padding: 0 0.9em;
+    line-height: 2.135em;
     height: 2em;
-    border-radius: 1.675em;
+    border-radius: 2em;
     -o-transition: $transition-speed;
     -ms-transition: $transition-speed;
     -moz-transition: $transition-speed;
     -webkit-transition: $transition-speed;
     transition: $transition-speed;
-}
-
-.toggle_list a {
-    line-height: 2.135em;
 }
