@@ -4,6 +4,21 @@ img {
     height: auto;
 }
 
+.inline {
+    display: inline-block;
+}
+
 .top_image {
-    border-bottom: solid $small-gap #fff;
+    padding: 4.5%;
+}
+
+.half {
+    width: 40%;
+    padding: 5%;
+    vertical-align: middle;
+}
+
+.more {
+    width: 50%;
+    padding-bottom: 5%;
 }

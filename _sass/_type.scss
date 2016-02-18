@@ -26,25 +26,18 @@ p, .add_button {
 }
 
 .add_button {
-    padding-top: $spacing-unit;
     display: inline-block;
-}
-
-@media screen and (min-width: $large) {
-    .add_button {
-        padding-top: $spacing-unit-large;
-    }
 }
 
 .toggle_list li {
     display: inline-block;
     float: left;
-    margin: 0 0.55em 0.55em 0;
+    margin: 0 0.5em 0.5em 0;
 }
 
 .toggle_list a, .add_button a {
     display: block;
-    padding: 0 0.9em;
+    padding: 0 0.8em;
     line-height: 2.135em;
     height: 2em;
     border-radius: 2em;

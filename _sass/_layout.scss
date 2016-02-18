@@ -57,7 +57,7 @@ ul {
     padding-top: $spacing-unit;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
-    padding-bottom: 60px + ($spacing-unit * 2) - 20px;
+    padding-bottom: 54px + ($spacing-unit * 2) - 20px;
     z-index: $front;
     overflow: scroll;
 }
@@ -65,11 +65,12 @@ ul {
 @media screen and (min-width: $large) {
     .toggle {
         width: 50%;
+        max-width: $max-width-half;
         border-right: solid $small-gap #fff;
         padding-top: $spacing-unit-large;
         padding-left: $spacing-unit-large;
         padding-right: $spacing-unit-large;
-        padding-bottom: 60px + ($spacing-unit-large * 2) - 20px;
+        padding-bottom: 54px + ($spacing-unit-large * 2) - 20px;
     }
 }
 
@@ -84,6 +85,7 @@ ul {
 @media screen and (min-width: $large) {
     .toggle_background {
         width: 50%;
+        max-width: $max-width-half;
     }
 }
 
@@ -106,6 +108,7 @@ ul {
     .toggle_esc {
         display: none;
         width: 50%;
+        max-width: $max-width-half;
         height: 100%;
         position: fixed;
         top: 0;
@@ -153,12 +156,12 @@ ul {
     }
 }
 
-.title_spacing {
+.price, .title_spacing {
     padding-bottom: $spacing-unit;
 }
 
 @media screen and (min-width: $large) {
-    .title_spacing {
+    .price, .title_spacing {
         padding-bottom: $spacing-unit-large;
     }
 }
@@ -178,12 +181,12 @@ footer {
 
 .footer_replace {
     display: none;
-    height: 60px + ($spacing-unit * 2);
+    height: 54px + ($spacing-unit * 2);
     clear: both;
 }
 
 @media screen and (min-width: $large) {
     .footer_replace {
-        height: 60px + ($spacing-unit-large * 2);
+        height: 54px + ($spacing-unit-large * 2);
     }
 }

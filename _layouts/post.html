@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-<div class="top_image"><img src="{{ page.image_one }}"></div>
+<div class="top_image"><img src="{{ page.image }}"></div>
 <div class="margins post_text">
     <p class="title_spacing post_title check">{{ page.title }}<br>by <a class="check">{{ page.author }}</a></p>
     <div class="price"><p class="check">{{ page.price }}</p></div>
-    <div class="add_button"><a>Add to bag <i class="twa twa-sparkles"></i></a></div>
+    <div class="add_button"><a href="{{ page.buy }}">Buy <i class="twa twa-sparkles"></i></a></div>
     <div class="description"><p class="check">{{ page.description }}</p></div>
 </div>
-<div><img src="{{ page.image_two }}"></div>
 {{ content }}
