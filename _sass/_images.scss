@@ -4,11 +4,14 @@ img {
     max-height: 100%;
 }
 
+.index_image img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
 .index_image {
     position: relative;
     float: left;
-    max-width: 500px;
-    height: 500px;
     padding-right: $small-gap;
     padding-bottom: $small-gap;
 }
