@@ -4,12 +4,16 @@ img {
     height: auto;
 }
 
-.inline {
-    display: inline-block;
+.index_image {
+    position: relative;
+    float: left;
+    width: 33%;
+    padding-right: $small-gap;
+    padding-bottom: $small-gap;
 }
 
-.top_image {
-    padding: 4.5%;
+.inline {
+    display: inline-block;
 }
 
 .half {

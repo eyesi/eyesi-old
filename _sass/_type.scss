@@ -47,3 +47,15 @@ p, .add_button {
     -webkit-transition: $transition-speed;
     transition: $transition-speed;
 }
+
+.index_title {
+    font-size: $font-size-mid;
+    opacity: 0;
+    transition: opacity $transition-speed ease-in-out;
+    -moz-transition: opacity $transition-speed ease-in-out;
+    -webkit-transition: opacity $transition-speed ease-in-out;
+}
+
+.index_title:hover {
+    opacity: 1;
+}
