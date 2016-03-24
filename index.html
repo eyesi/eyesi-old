@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<div class="top_spacing margins">
-    <p class="title_spacing tag_title">All</p>
+<div class="margin top">
+    <div class="tag_title"><a>All</a></div>
     <ul>
     {% for post in site.posts %}
         <li>
             <a href="{{ post.url }}">
                 <div class="index_image inline"><img src="{{ post.image }}">
-                    <div class="index_title">{{ post.title }}<br>{{ post.price }}
+                    <div class="index_title check">{{ post.title }}<br>{{ post.price }}
                     </div>
                 </div>
             </a>
