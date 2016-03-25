@@ -20,6 +20,17 @@ ul {
     margin: 0 auto;
 }
 
+.nav_spacer {
+    width: 100%;
+    height: 74px;
+}
+
+@media screen and (min-width: $large) {
+    .nav_spacer {
+        height: 94px;
+    }
+}
+
 /* Nav */
 
 .top_nav {
@@ -44,11 +55,6 @@ ul {
 
 .right {
     float: right;
-}
-
-.nav_spacer {
-    width: 100%;
-    height: 94px;
 }
 
 /* Toggle */
@@ -125,17 +131,13 @@ ul {
 
 /* Index */
 
-.index_title {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: $spacing-unit / 1.5;
-}
-
 @media screen and (min-width: $large) {
     .index_title {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
         padding: $spacing-unit-large / 1.5;
     }
 }
@@ -174,9 +176,10 @@ ul {
 @media screen and (min-width: $large) {
     .post_description {
         width: 33%;
-        margin-left: 66%;
-        padding-top: $spacing-unit-large;
-        padding-bottom: $spacing-unit-large;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: $spacing-unit-large * 1.5;
+        padding-bottom: $spacing-unit-large * 1.5;
     }
 }
 
