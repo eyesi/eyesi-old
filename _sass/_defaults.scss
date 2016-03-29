@@ -16,6 +16,14 @@ img {
     max-height: 100%;
 }
 
+.container {
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+/* Type */
+
 ul {
     list-style: none;
 }
@@ -35,11 +43,7 @@ a, p {
     color: $text-color;
 }
 
-.container {
-    width: 100%;
-    max-width: $max-width;
-    margin: 0 auto;
-}
+/* Colour */
 
 .back, body {
     background: $soft-color;

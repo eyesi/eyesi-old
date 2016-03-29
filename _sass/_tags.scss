@@ -17,24 +17,6 @@
     }
 }
 
-.tags a {
-    display: inline-block;
-    float: left;
-    padding-right: 1.25em;
-    padding-bottom: 1em;
-    font-size: $font-size;
-    color: $text-color;
-    vertical-align: bottom;
-}
-
-@media screen and (min-width: $large) {
-    .tags {
-        padding-top: $spacing-unit-large * 2;
-        padding-left: $spacing-unit-large;
-        padding-right: $spacing-unit-large;
-    }
-}
-
 .tags ul {
     max-width: $max-width;
     @extend %clearfix;
@@ -47,4 +29,16 @@
     display: table;
   }
   clearfix:after { clear: both; }
+}
+
+/* Type */
+
+.tags a {
+    display: inline-block;
+    float: left;
+    padding-right: 1.25em;
+    padding-bottom: 1em;
+    font-size: $font-size;
+    color: $text-color;
+    vertical-align: bottom;
 }
