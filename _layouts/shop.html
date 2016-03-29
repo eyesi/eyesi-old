@@ -1,24 +1,7 @@
 ---
 layout: default
 ---
-<section class="tags back">
-    <ul>
-        <li><a href="/">All</a></li>
-    {% for category in site.categories %}
-        <li>
-        <a href="/{{ category | first | slugize }}/">
-            {{ category | first }}
-        </a>
-    {% endfor %}
-    {% for tag in site.tags %}
-        <a href="/{{ tag | first | slugize }}/">
-            {{ tag | first }}
-        </a>
-    {% endfor %}
-        </li>
-    </ul>
-</section>
-
+{% include tags.html %}
 <section class="served">
     <ul>
     {% for post in site.categories[page.category] %}
