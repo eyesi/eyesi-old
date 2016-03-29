@@ -1,0 +1,21 @@
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: $spacing-unit;
+    clear: both;
+}
+
+@media screen and (min-width: $large) {
+    footer {
+        padding: $spacing-unit-large;
+    }
+}
+
+footer a {
+    font-size: $font-size;
+    display: inline-block;
+    float: left;
+    padding-right: 1.5em;
+}

@@ -21,11 +21,21 @@ layout: default
 
 <section class="served">
     <ul>
-    {% for post in site.posts %}
+    {% for post in site.categories[page.category] %}
         <li>
             <a href="{{ post.url }}">
                 <div class="index_image inline"><img src="{{ post.image }}">
-                    <div class="index_title check">{{ post.title }}<br>{{ post.price }}
+                    <div class="index_title">{{ post.title }}<br>{{ post.price }}
+                    </div>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+    {% for post in site.tags[page.tag] %}
+        <li>
+            <a href="{{ post.url }}">
+                <div class="index_image inline"><img src="{{ post.image }}">
+                    <div class="index_title">{{ post.title }}<br>{{ post.price }}
                     </div>
                 </div>
             </a>

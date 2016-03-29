@@ -1,0 +1,43 @@
+.tags {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: $spacing-unit * 2;
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+    padding-bottom: $spacing-unit;
+    z-index: -1;
+}
+
+@media screen and (min-width: $large) {
+    .tags {
+        padding-top: $spacing-unit-large * 2;
+        padding-left: $spacing-unit-large;
+        padding-right: $spacing-unit-large;
+        padding-bottom: $spacing-unit-large;
+    }
+}
+
+.tags a {
+    display: inline-block;
+    float: left;
+    padding-right: 1.25em;
+    padding-bottom: 1em;
+    font-size: $font-size-mid;
+    color: $text-color;
+    vertical-align: bottom;
+}
+
+.tags ul {
+    @extend %clearfix;
+}
+
+%clearfix {
+  *zoom: 1;
+  clearfix:before, clearfix:after {
+    content: " ";
+    display: table;
+  }
+  clearfix:after { clear: both; }
+}

@@ -1,0 +1,65 @@
+.served {
+    position: absolute;
+    margin-top: 97px;
+    margin-bottom: 71px;
+    width: 100%;
+    padding-top: $spacing-unit * 1.5;
+    background: #fff;
+    z-index: 1;
+}
+
+@media screen and (min-width: $large) {
+    .served {
+        padding-top: $spacing-unit-large * 1.5;
+    }
+}
+
+.served ul {
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+    @extend %clearfix;
+}
+
+@media screen and (min-width: $large) {
+    .served ul {
+        padding-left: $spacing-unit-large / 2;
+        padding-right: $spacing-unit-large / 2;
+    }
+}
+
+%clearfix {
+  *zoom: 1;
+  clearfix:before, clearfix:after {
+    content: " ";
+    display: table;
+  }
+  clearfix:after { clear: both; }
+}
+
+.served li {
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+}
+
+@media screen and (min-width: $large) {
+    .served li {
+        width: 33.33%;
+        position: relative;
+        float: left;
+        padding-left: $spacing-unit-large / 2;
+        padding-right: $spacing-unit-large / 2;
+    }
+}
+
+.index_title {
+    font-size: $font-size-mid;
+    padding-top: $spacing-unit / 2;
+    padding-bottom: $spacing-unit * 1.5;
+}
+
+@media screen and (min-width: $large) {
+    .index_title {
+        padding-top: $spacing-unit-large / 2;
+        padding-bottom: $spacing-unit-large * 1.5;
+    }
+}

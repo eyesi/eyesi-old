@@ -6,7 +6,8 @@ price: $34.00
 buy: https://checkout.trychec.com/myrobalan
 image: /images/myro1.jpg
 description:
-tag: [Linen, Textile]
+category: [Linens]
+tag: [Textile]
 permalink: /myrobalan
 ---
 ![](/images/myro2.jpg){: .post_image .fit }
