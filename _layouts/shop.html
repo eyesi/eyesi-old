@@ -7,7 +7,7 @@ layout: default
     {% for post in site.categories[page.category] %}
         <li>
             <a href="{{ post.url }}">
-                <div class="index_image inline"><img src="{{ post.image }}">
+                <div class="index_image"><img src="{{ post.image }}">
                     <div class="index_title">{{ post.title }}<br>{{ post.price }}
                     </div>
                 </div>
@@ -17,7 +17,7 @@ layout: default
     {% for post in site.tags[page.tag] %}
         <li>
             <a href="{{ post.url }}">
-                <div class="index_image inline"><img src="{{ post.image }}">
+                <div class="index_image"><img src="{{ post.image }}">
                     <div class="index_title">{{ post.title }}<br>{{ post.price }}
                     </div>
                 </div>

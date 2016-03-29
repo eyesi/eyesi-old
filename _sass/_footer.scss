@@ -3,13 +3,16 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    padding: $spacing-unit;
-    clear: both;
+    padding-top: $spacing-unit;
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
 }
 
 @media screen and (min-width: $large) {
     footer {
-        padding: $spacing-unit-large;
+        padding-top: $spacing-unit-large;
+        padding-left: $spacing-unit-large;
+        padding-right: $spacing-unit-large;
     }
 }
 
@@ -17,5 +20,6 @@ footer a {
     font-size: $font-size;
     display: inline-block;
     float: left;
-    padding-right: 1.5em;
+    padding-right: 1.25em;
+    padding-bottom: 1em;
 }

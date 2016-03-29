@@ -6,7 +6,6 @@
     padding-top: $spacing-unit * 2;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
-    padding-bottom: $spacing-unit;
     z-index: -1;
 }
 
@@ -15,7 +14,6 @@
         padding-top: $spacing-unit-large * 2;
         padding-left: $spacing-unit-large;
         padding-right: $spacing-unit-large;
-        padding-bottom: $spacing-unit-large;
     }
 }
 
@@ -24,12 +22,21 @@
     float: left;
     padding-right: 1.25em;
     padding-bottom: 1em;
-    font-size: $font-size-mid;
+    font-size: $font-size;
     color: $text-color;
     vertical-align: bottom;
 }
 
+@media screen and (min-width: $large) {
+    .tags {
+        padding-top: $spacing-unit-large * 2;
+        padding-left: $spacing-unit-large;
+        padding-right: $spacing-unit-large;
+    }
+}
+
 .tags ul {
+    max-width: $max-width;
     @extend %clearfix;
 }
 
