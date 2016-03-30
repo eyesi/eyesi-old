@@ -2,7 +2,7 @@
 layout: post
 title:  California Red Purse
 author: eyesi
-price: $90.00
+price: $85.00
 buy: https://checkout.trychec.com/california
 image: /images/cali1.jpg
 description:

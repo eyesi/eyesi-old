@@ -1,11 +1,14 @@
 ---
 layout: default
 ---
-<div class="post_image"><img src="{{ page.image }}"></div>
-<div>
-    <p class="post_title">{{ page.title }}<br>by <a class="check">{{ page.author }}</a></p>
-    <div class="price"><p>{{ page.price }}</p></div>
-    <div class="add_button"><a href="{{ page.buy }}">Buy <i class="twa twa-sparkles"></i></a></div>
-</div>
-<div class="post_description"><p>{{ page.description }}</p></div>
-{{ content }}
+{% include header.html %}
+<element>
+    <section class="top">
+        <div id="top" class="post_image"><img src="{{ page.image }}"></div>
+        <h1 class="post_title">{{ page.title }}<br>by {{ page.author }}</h1>
+    </section>
+    <div class="add_button">
+        <a href="{{ page.buy }}">Buy <i class="twa twa-sparkles"></i> <span class="price">{{ page.price }}</span></a></div>
+    <div class="post_description"><p>{{ page.description }}</p></div>
+    {{ content }}
+</element>

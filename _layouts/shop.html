@@ -6,9 +6,10 @@ layout: default
     <ul>
     {% for post in site.categories[page.category] %}
         <li>
-            <a href="{{ post.url }}">
+            <a href="{{ post.url }}#top">
                 <div class="index_image"><img src="{{ post.image }}">
-                    <div class="index_title">{{ post.title }}<br>{{ post.price }}
+                    <div class="index_title">
+                        <span class="title">{{ post.title }}</span> <span class="price">{{ post.price }}</span>
                     </div>
                 </div>
             </a>
@@ -16,9 +17,10 @@ layout: default
     {% endfor %}
     {% for post in site.tags[page.tag] %}
         <li>
-            <a href="{{ post.url }}">
+            <a href="{{ post.url }}#top">
                 <div class="index_image"><img src="{{ post.image }}">
-                    <div class="index_title">{{ post.title }}<br>{{ post.price }}
+                    <div class="index_title">
+                        <span class="title">{{ post.title }}</span> <span class="price">{{ post.price }}</span>
                     </div>
                 </div>
             </a>

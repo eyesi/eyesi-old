@@ -2,34 +2,37 @@
 ---
 @charset "utf-8";
 
-$font-family: 'Graphik', 'Arial', 'Roboto', sans-serif;
-$font-size: 14px;
-$font-size-mid: 18px;
-$font-size-huge: 18px;
-$font-size-massive: 28px;
-$font-weight: 400;
-$line-height: 1.3;
+/* Layout */
 
-// Padding
-$spacing-unit: 14px;
-$spacing-unit-large: 24px;
-
-$small-gap: 5px;
+$spacing-unit: 20px;
+$spacing-unit-large: 20px;
 
 $max-width: 1440px;
 
-// Colors
+$large: 780px;
+
+/* Type */
+
+$font-size: 17px;
+$font-size-mid: 17px;
+$font-weight: 400;
+$line-height: 1.4;
+$letter-spacing: 0.03em;
+
+/* Colour */
+
 $text-color: #43474f;
-$text-color-light: #a54954;
-
+$not-white: #fefefe;
 $soft-color: #f9f9f9;
-$soft-color-2: #f8dce8;
 
-$highlight-color: #ffcc99;
+/* Effects */
 
 $transition-speed: .2s;
 
-// Breakpoints
-$large: 780px;
+/* Layers */
 
-@import "defaults", "served", "tags", "footer";
+$front: 1;
+$back: -1;
+
+
+@import "general", "header", "tags", "served", "top", "description", "footer";

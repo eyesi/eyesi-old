@@ -1,16 +1,15 @@
 .served {
     position: absolute;
-    margin-top: 80px;
-    margin-bottom: 80px;
     width: 100%;
-    padding-top: $spacing-unit * 1.5;
-    background: #fff;
-    z-index: 1;
+    padding-top: $spacing-unit / 2;
+    background: $not-white;
+    z-index: $front;
+    margin-bottom: 83px;
 }
 
 @media screen and (min-width: $large) {
     .served {
-        padding-top: $spacing-unit-large * 1.5;
+        padding-top: $spacing-unit-large / 2;
     }
 }
 
@@ -22,8 +21,8 @@
 
 @media screen and (min-width: $large) {
     .served ul {
-        padding-left: $spacing-unit-large / 2;
-        padding-right: $spacing-unit-large / 2;
+        padding-left: $spacing-unit-large - ($spacing-unit-large / 4);
+        padding-right: $spacing-unit-large - ($spacing-unit-large / 4);
     }
 }
 
@@ -43,15 +42,19 @@
 
 @media screen and (min-width: $large) {
     .served li {
-        width: 33.33%;
+        width: 50%;
         position: relative;
         float: left;
-        padding-left: $spacing-unit-large / 2;
-        padding-right: $spacing-unit-large / 2;
+        padding-left: $spacing-unit-large / 4;
+        padding-right: $spacing-unit-large / 4;
     }
 }
 
 /* Type */
+
+.price {
+    font-style: italic;
+}
 
 .index_title {
     font-size: $font-size-mid;

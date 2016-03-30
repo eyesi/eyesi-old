@@ -1,0 +1,17 @@
+.post_description {
+    padding-top: $spacing-unit * 2;
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+    padding-bottom: $spacing-unit * 2;
+}
+
+@media screen and (min-width: $large) {
+    .post_description {
+        width: 50%;
+        margin: 0 auto;
+        padding-top: $spacing-unit-large * 2;
+        padding-left: $spacing-unit-large;
+        padding-right: $spacing-unit-large;
+        padding-bottom: $spacing-unit-large * 2;
+    }
+}

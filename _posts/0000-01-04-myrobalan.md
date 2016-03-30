@@ -2,7 +2,7 @@
 layout: post
 title:  Myrobalan Tea Towel
 author: eyesi
-price: $34.00
+price: $35.00
 buy: https://checkout.trychec.com/myrobalan
 image: /images/myro1.jpg
 description:

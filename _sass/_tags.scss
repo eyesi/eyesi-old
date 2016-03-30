@@ -1,4 +1,4 @@
-.tags {
+.tags, header {
     position: fixed;
     top: 0;
     left: 0;
@@ -6,11 +6,11 @@
     padding-top: $spacing-unit * 2;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
-    z-index: -1;
+    z-index: $back;
 }
 
 @media screen and (min-width: $large) {
-    .tags {
+    .tags, header {
         padding-top: $spacing-unit-large * 2;
         padding-left: $spacing-unit-large;
         padding-right: $spacing-unit-large;
@@ -33,12 +33,13 @@
 
 /* Type */
 
-.tags a {
+.tags li {
     display: inline-block;
     float: left;
     padding-right: 1.25em;
-    padding-bottom: 1em;
     font-size: $font-size;
-    color: $text-color;
-    vertical-align: bottom;
+}
+
+.tags span {
+    font-size: $font-size;
 }

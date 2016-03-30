@@ -1,0 +1,28 @@
+.top {
+    position: relative;
+}
+
+.post_title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: $spacing-unit;
+}
+
+.add_button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: $spacing-unit;
+}
+
+.add_button a {
+    display: block;
+    padding: 0 1em;
+    line-height: 2.5em;
+    height: 2.5em;
+    border-radius: 2em;
+    font-size: $font-size;
+    background: aliceblue;
+    color: $text-color;
+}

@@ -3,25 +3,21 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    padding-top: $spacing-unit;
-    padding-left: $spacing-unit;
-    padding-right: $spacing-unit;
+    padding: $spacing-unit;
+    z-index: $back;
 }
 
 @media screen and (min-width: $large) {
     footer {
-        padding-top: $spacing-unit-large;
-        padding-left: $spacing-unit-large;
-        padding-right: $spacing-unit-large;
+        padding: $spacing-unit-large;
     }
 }
 
 /* Type */
 
-footer a {
+footer li {
     font-size: $font-size;
     display: inline-block;
     float: left;
     padding-right: 1.25em;
-    padding-bottom: 1em;
 }

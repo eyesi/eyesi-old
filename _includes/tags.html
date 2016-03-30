@@ -1,17 +1,21 @@
-<section class="tags back">
+<section class="tags">
     <ul>
+        <li><a href="/">Shop</a></li>
         <li><a href="/">All</a></li>
-    {% for category in site.categories %}
+        {% for category in site.categories %}
         <li>
-        <a href="/{{ category | first | slugize }}/">
+            <a href="/{{ category | first | slugize }}/">
             {{ category | first }}
-        </a>
-    {% endfor %}
-    {% for tag in site.tags %}
-        <a href="/{{ tag | first | slugize }}/">
+            </a>
+        {% endfor %}
+        </li>
+        {% for tag in site.tags %}
+        <li>
+            <a href="/{{ tag | first | slugize }}/">
             {{ tag | first }}
-        </a>
-    {% endfor %}
+            </a>
+        {% endfor %}
         </li>
     </ul>
+    <span class="bag_button"><a>Bag</a></span>
 </section>
