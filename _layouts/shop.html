@@ -6,8 +6,8 @@ layout: default
     <ul>
     {% for post in site.categories[page.category] %}
         <li>
-            <a href="{{ post.url }}#top">
-                <div class="index_image"><img src="{{ post.image }}">
+            <a href="{{ post.url | prepend: site.baseurl }}#top">
+                <div class="index_image"><img src="{{ post.image | prepend: site.baseurl }}">
                     <div class="index_title">
                         <span class="title">{{ post.title }}</span> <span class="price">{{ post.price }}</span>
                     </div>
@@ -17,8 +17,8 @@ layout: default
     {% endfor %}
     {% for post in site.tags[page.tag] %}
         <li>
-            <a href="{{ post.url }}#top">
-                <div class="index_image"><img src="{{ post.image }}">
+            <a href="{{ post.url | prepend: site.baseurl }}#top">
+                <div class="index_image"><img src="{{ post.image | prepend: site.baseurl }}">
                     <div class="index_title">
                         <span class="title">{{ post.title }}</span> <span class="price">{{ post.price }}</span>
                     </div>
