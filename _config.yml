@@ -1,6 +1,6 @@
 title: eyesi – Homeware Design
 email: hello@eyesi.co
 description: "eyesi is an experimental design company. We design products that sit comfortably in your home. We aim to be as sustainable as possible and we do this by using only organic fabrics, natural dyes and low to no waste production. All made here in New Zealand."
-baseurl: "{{ site.github.url }}"
-url: "http://eyesi.co"
+baseurl: "/eyesi"
+url: ""
 markdown: kramdown
