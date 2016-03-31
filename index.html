@@ -6,7 +6,7 @@ layout: default
     <ul>
     {% for post in site.posts %}
         <li>
-            <a href="{{ post.url }}#top">
+            <a href="{{ post.url | prepend: site.baseurl }}#top">
                 <div class="index_image"><img src="{{ post.image }}">
                     <div class="index_title">
                         <span class="title">{{ post.title }}</span> <span class="price">{{ post.price }}</span>
