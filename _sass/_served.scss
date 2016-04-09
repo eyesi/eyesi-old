@@ -1,16 +1,9 @@
 .served {
     position: absolute;
     width: 100%;
-    padding-top: $spacing-unit / 2;
     background: $not-white;
     z-index: $front;
-    margin-bottom: 83px;
-}
-
-@media screen and (min-width: $large) {
-    .served {
-        padding-top: $spacing-unit-large / 2;
-    }
+    margin-bottom: 63px;
 }
 
 .served ul {

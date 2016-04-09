@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: $spacing-unit * 2;
+    padding-top: $spacing-unit;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
     z-index: $back;
@@ -11,7 +11,7 @@
 
 @media screen and (min-width: $large) {
     .tags, header {
-        padding-top: $spacing-unit-large * 2;
+        padding-top: $spacing-unit-large;
         padding-left: $spacing-unit-large;
         padding-right: $spacing-unit-large;
     }

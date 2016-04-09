@@ -19,13 +19,13 @@ img {
 
 .spacer {
     width: 100%;
-    margin-top: 83px;
+    margin-top: 63px;
     z-index: $front;
 }
 
 .stick {
     width: 100%;
-    margin-bottom: 83px;
+    margin-bottom: 63px;
     z-index: $front;
 }
 
@@ -37,9 +37,10 @@ img {
 
 element {
     position: absolute;
-    width: 100%;
     background: $not-white;
-    margin-bottom: 83px;
+    margin-bottom: 63px;
+    margin-left: $spacing-unit;
+    margin-right: $spacing-unit;
 }
 
 /* Type */
