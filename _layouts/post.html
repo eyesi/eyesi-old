@@ -8,7 +8,7 @@ layout: default
         <h1 class="post_title">{{ page.title }}<br>by {{ page.author }}</h1>
     </section>
     <div class="add_button">
-        <a href="{{ page.buy | prepend: site.baseurl }}">Buy | <span class="price">{{ page.price }}</span></a></div>
+        <a href="{{ page.buy | prepend: site.baseurl }}">Buy <span class="price">{{ page.price }}</span></a></div>
     <div class="post_description"><p>{{ page.description }}</p></div>
     {{ content }}
 </element>
