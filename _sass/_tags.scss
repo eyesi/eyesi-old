@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: $spacing-unit;
+    padding-top: $spacing-unit * 2;
     padding-left: $spacing-unit;
     padding-right: $spacing-unit;
     z-index: $back;
@@ -11,9 +11,9 @@
 
 @media screen and (min-width: $large) {
     .tags, header {
-        padding-top: $spacing-unit-large;
-        padding-left: $spacing-unit-large;
-        padding-right: $spacing-unit-large;
+        padding-top: $spacing-unit * 2;
+        padding-left: $spacing-unit;
+        padding-right: $spacing-unit;
     }
 }
 
@@ -36,7 +36,7 @@
 .tags li {
     display: inline-block;
     float: left;
-    padding-right: 1.25em;
+    padding-right: $spacing-unit;
     font-size: $font-size;
 }
 
