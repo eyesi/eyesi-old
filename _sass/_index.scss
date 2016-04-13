@@ -1,0 +1,73 @@
+.served li {
+    position: relative;
+    float: left;
+}
+
+@media screen and (min-width: $large) {
+    .served li {
+        width: 50%;
+    }
+}
+
+/* Type */
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: initial;
+    z-index: $front;
+}
+
+.hover:hover {
+    opacity: 1;
+}
+
+.hover:hover .price {
+    position: absolute;
+    bottom: $spacing-unit * 2;
+}
+
+.hover:hover .title {
+    position: absolute;
+    top: $spacing-unit * 2;
+}
+
+.title {
+    position: absolute;
+    top: $spacing-unit * 1.8;
+    left: $spacing-unit * 2;
+    font-size: 20px;
+    z-index: $front;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+    transition-delay: initial;
+}
+
+.price {
+    position: absolute;
+    bottom: $spacing-unit * 1.8;
+    left: $spacing-unit * 2;
+    z-index: $front;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+    transition-delay: initial;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $hover-color;
+    opacity: 0.9;
+}

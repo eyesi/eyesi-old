@@ -9,8 +9,10 @@ layout: default
         <li>
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <div class="index_image"><img src="{{ post.image | prepend: site.baseurl }}">
-                    <div class="index_text">
+                    <div class="hover">
                         <span class="title">{{ post.title }}</span>
+                        <span class="price">{{ post.price }}</span>
+                        <span class="background"></span>
                     </div>
                 </div>
             </a>

@@ -9,6 +9,7 @@
     border: 0;
     outline: 0;
     vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -37,10 +38,8 @@ img {
 
 element {
     position: absolute;
-    background: $not-white;
+    background: $soft-color;
     margin-bottom: $spacer;
-    margin-left: $spacing-unit;
-    margin-right: $spacing-unit;
 }
 
 /* Type */

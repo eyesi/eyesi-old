@@ -1,20 +1,12 @@
-.tags, header {
+.tags {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding-top: $spacing-unit * 2;
-    padding-left: $spacing-unit;
-    padding-right: $spacing-unit;
+    padding-left: $spacing-unit * 2;
+    padding-right: $spacing-unit * 2;
     z-index: $back;
-}
-
-@media screen and (min-width: $large) {
-    .tags, header {
-        padding-top: $spacing-unit * 2;
-        padding-left: $spacing-unit;
-        padding-right: $spacing-unit;
-    }
 }
 
 .tags ul {

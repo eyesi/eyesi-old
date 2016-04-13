@@ -1,21 +1,37 @@
+.post_title {
+    padding-top: $spacing-unit * 4;
+    padding-left: $spacing-unit * 2;
+    padding-right: $spacing-unit * 2;
+    padding-bottom: $spacing-unit * 4;
+    font-size: 20px;
+}
+
+@media screen and (min-width: $large) {
+    .post_title {
+        width: 33.33%;
+        margin-left: 33.33%;
+        float: left;
+    }
+}
+
 .top {
     position: relative;
 }
 
-.post_title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: $spacing-unit * 2;
-    font-size: $font-size-big;
-    color: #FCEBEA;
+.top_image {
+    width: 87.5%
+}
+
+.top_image img {
+    margin-top: -25%;
+    vertical-align: bottom;
 }
 
 .add_button {
     position: fixed;
     bottom: 0;
     left: 0;
-    padding-left: $spacing-unit * 3;
+    padding-left: $spacing-unit * 2;
     padding-bottom: $spacing-unit * 2;
 }
 

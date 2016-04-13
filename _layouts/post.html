@@ -5,10 +5,10 @@ layout: default
 <element>
     <section class="top">
         <div class="top_image"><img src="{{ page.image | prepend: site.baseurl }}"></div>
-        <h1 class="post_title">{{ page.title }}<br>by {{ page.author }}</h1>
     </section>
     <div class="add_button">
-        <a class="buy" href="{{ page.buy | prepend: site.baseurl }}">Buy <span class="devide"></span><span class="price">{{ page.price }}</span></a></div>
+        <a class="buy" href="{{ page.buy | prepend: site.baseurl }}">Buy <i class="twa twa-sparkles"></i> <span class="devide"></span><span>{{ page.price }}</span></a></div>
+    <p class="post_title">{{ page.title }}<br>by {{ page.author }}</p>
     <div class="post_description"><p>{{ page.description }}</p></div>
     {{ content }}
 </element>

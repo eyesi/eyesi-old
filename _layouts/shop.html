@@ -9,8 +9,10 @@ layout: default
         <li>
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <div class="index_image"><img src="{{ post.image | prepend: site.baseurl }}">
-                    <div class="index_title">
-                        <span class="title">{{ post.title }}</span> <span class="price">{{ post.price }}</span>
+                    <div class="hover">
+                        <span class="title">{{ post.title }}</span>
+                        <span class="price">{{ post.price }}</span>
+                        <span class="background"></span>
                     </div>
                 </div>
             </a>
@@ -20,8 +22,10 @@ layout: default
         <li>
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <div class="index_image"><img src="{{ post.image | prepend: site.baseurl }}">
-                    <div class="index_text">
-                        <span class="title">{{ post.title }}</span> <span class="price">{{ post.price }}</span>
+                    <div class="hover">
+                        <span class="title">{{ post.title }}</span>
+                        <span class="price">{{ post.price }}</span>
+                        <span class="background"></span>
                     </div>
                 </div>
             </a>
