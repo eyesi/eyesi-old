@@ -1,5 +1,4 @@
 .post_description {
-    padding-top: $spacing-unit * 4;
     padding-left: $spacing-unit * 2;
     padding-right: $spacing-unit * 2;
     padding-bottom: $spacing-unit * 4;
@@ -7,7 +6,7 @@
 
 @media screen and (min-width: $large) {
     .post_description {
-        width: 33.33%;
+        width: 50%;
         float: left;
     }
 }
