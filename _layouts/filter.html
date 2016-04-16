@@ -8,8 +8,8 @@ layout: default
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <div class="index_image"><img src="{{ post.image | prepend: site.baseurl }}">
                     <div class="hover">
-                        <span class="title">{{ post.title }}</span>
-                        <span class="price">{{ post.price }}</span>
+                        <p class="title">{{ post.title }}<br>{{ post.type }}</p>
+                        <p class="price">{{ post.price }}</p>
                         <span class="background"></span>
                     </div>
                 </div>
@@ -21,8 +21,8 @@ layout: default
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <div class="index_image"><img src="{{ post.image | prepend: site.baseurl }}">
                     <div class="hover">
-                        <span class="title">{{ post.title }}</span>
-                        <span class="price">{{ post.price }}</span>
+                        <p class="title">{{ post.title }}<br>{{ post.type }}</p>
+                        <p class="price">{{ post.price }}</p>
                         <span class="background"></span>
                     </div>
                 </div>

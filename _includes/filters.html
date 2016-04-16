@@ -1,0 +1,21 @@
+<section class="tags">
+    <ul>
+        <li><a href="/">Shop</a></li>
+        <li><a href="/">All</a></li>
+        {% for category in site.categories %}
+        <li>
+            <a href="/{{ category | first | slugize }}/">
+            {{ category | first }}
+            </a>
+        {% endfor %}
+        </li>
+        {% for tag in site.tags %}
+        <li>
+            <a href="/{{ tag | first | slugize }}/">
+            {{ tag | first }}
+            </a>
+        {% endfor %}
+        </li>
+    </ul>
+    <span class="bag_button"><a>Bag</a></span>
+</section>

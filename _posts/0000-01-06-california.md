@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  California Red
+title: California Red
 type: Purse
 author: Lydia Lees
 brand: eyesi

@@ -1,10 +1,20 @@
 ---
 layout: default
 ---
-<div class="top_image"><img src="{{ page.image | prepend: site.baseurl }}"></div>
-<p class="post_title">{{ page.title }}<br>by {{ page.author }}</p>
-<div class="post_description"><p>{{ page.description }}</p></div>
-<div class="add_button">
+<section class="post_title">
+    {% include tags.html %}
+    <p class="title">{{ page.title }}<br>{{ page.type }}</p>
+    <p class="by">Designed by<br>{{ page.author }}<br>for {{ page.brand }}</p>
+    <div class="add_button">
     <a class="buy" href="{{ page.buy | prepend: site.baseurl }}">Buy <i class="twa twa-sparkles"></i> <span class="devide"></span><span>{{ page.price }}</span></a>
-</div>
+    </div>
+</section>
+<section class="post_image">
+    <img src="{{ page.image | prepend: site.baseurl }}">
+</section>
+<section class="post_description">
+    <p>{{ page.description }}</p>
+</section>
+<section class="post_images">
 {{ content }}
+</section>

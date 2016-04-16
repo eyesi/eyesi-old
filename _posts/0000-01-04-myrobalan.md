@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Myrobalan
+title: Myrobalan
 type: Tea Towel
 author: Lydia Lees
 brand: eyesi

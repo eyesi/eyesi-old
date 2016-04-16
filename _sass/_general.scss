@@ -42,18 +42,11 @@ a {
     cursor: pointer;
 }
 
-h1 {
-    margin: 0;
-}
-
-a, p, h1 {
+a, p {
     font-family: 'Graphik', 'Arial', 'Roboto', sans-serif;
     font-weight: $font-weight;
     line-height: $line-height;
     letter-spacing: $letter-spacing;
-}
-
-a, p {
     font-size: $font-size;
     color: $text-color;
 }

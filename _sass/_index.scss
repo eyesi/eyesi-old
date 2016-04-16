@@ -18,11 +18,6 @@
     right: 0;
     bottom: 0;
     opacity: 0;
-    transition-property: all;
-    transition-duration: $transition-duration;
-    transition-timing-function: ease;
-    transition-delay: initial;
-    z-index: $front;
 }
 
 .hover:hover {
@@ -39,30 +34,20 @@
     top: $spacing-unit * 2;
 }
 
-.title {
+.index .title {
     position: absolute;
     top: $spacing-unit * 1.8;
     left: $spacing-unit * 2;
-    font-size: 20px;
-    z-index: $front;
-    transition-property: all;
-    transition-duration: $transition-duration;
-    transition-timing-function: ease;
-    transition-delay: initial;
+    font-size: $font-size-larger;
 }
 
-.price {
+.index .price {
     position: absolute;
     bottom: $spacing-unit * 1.8;
     left: $spacing-unit * 2;
-    z-index: $front;
-    transition-property: all;
-    transition-duration: $transition-duration;
-    transition-timing-function: ease;
-    transition-delay: initial;
 }
 
-.background {
+.index .background {
     position: absolute;
     top: 0;
     left: 0;
@@ -70,4 +55,14 @@
     bottom: 0;
     background: $hover-color;
     opacity: 0.9;
+}
+
+/* Effects */
+
+.hover, .title, .price {
+    transition-property: all;
+    transition-duration: $transition-duration;
+    transition-timing-function: ease;
+    transition-delay: initial;
+    z-index: $front;
 }
