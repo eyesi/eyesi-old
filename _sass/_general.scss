@@ -18,27 +18,16 @@ img {
     max-height: 100%;
 }
 
-.spacer {
-    width: 100%;
-    margin-top: $spacer;
-    z-index: $front;
-}
-
-.stick {
-    width: 100%;
-    margin-bottom: $spacer;
-    z-index: $front;
-}
-
 .container {
     width: 100%;
     max-width: $max-width;
     margin: 0 auto;
 }
 
-element {
+.content {
     position: absolute;
     background: $soft-color;
+    margin-top: $spacer;
     margin-bottom: $spacer;
 }
 

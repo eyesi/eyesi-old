@@ -1,10 +1,10 @@
-.served li {
+.index li {
     position: relative;
     float: left;
 }
 
 @media screen and (min-width: $large) {
-    .served li {
+    .index li {
         width: 50%;
     }
 }
@@ -19,7 +19,7 @@
     bottom: 0;
     opacity: 0;
     transition-property: all;
-    transition-duration: 500ms;
+    transition-duration: $transition-duration;
     transition-timing-function: ease;
     transition-delay: initial;
     z-index: $front;
@@ -46,7 +46,7 @@
     font-size: 20px;
     z-index: $front;
     transition-property: all;
-    transition-duration: 250ms;
+    transition-duration: $transition-duration;
     transition-timing-function: ease;
     transition-delay: initial;
 }
@@ -57,7 +57,7 @@
     left: $spacing-unit * 2;
     z-index: $front;
     transition-property: all;
-    transition-duration: 250ms;
+    transition-duration: $transition-duration;
     transition-timing-function: ease;
     transition-delay: initial;
 }

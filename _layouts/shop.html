@@ -1,11 +1,9 @@
 ---
 layout: default
 ---
-{% include header.html %}
-<element>
-<section class="served">
+<section class="index">
     <ul>
-    {% for post in site.categories[page.category] %}
+        {% for post in site.categories[page.category] %}
         <li>
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <div class="index_image"><img src="{{ post.image | prepend: site.baseurl }}">
@@ -17,8 +15,8 @@ layout: default
                 </div>
             </a>
         </li>
-    {% endfor %}
-    {% for post in site.tags[page.tag] %}
+        {% endfor %}
+        {% for post in site.tags[page.tag] %}
         <li>
             <a href="{{ post.url | prepend: site.baseurl }}">
                 <div class="index_image"><img src="{{ post.image | prepend: site.baseurl }}">
@@ -30,7 +28,6 @@ layout: default
                 </div>
             </a>
         </li>
-    {% endfor %}
+        {% endfor %}
     </ul>
 </section>
-</element>

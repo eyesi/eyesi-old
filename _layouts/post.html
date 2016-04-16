@@ -1,13 +1,10 @@
 ---
 layout: default
 ---
-{% include header.html %}
-<element style="background-color:{{ page.background | prepend: site.baseurl }};">
-    <div class="top_image"><img src="{{ page.image | prepend: site.baseurl }}"></div>
-    <p class="post_title">{{ page.title }}<br>by {{ page.author }}</p>
-    <div class="post_description"><p>{{ page.description }}</p></div>
-    <div class="add_button">
-        <a class="buy" href="{{ page.buy | prepend: site.baseurl }}">Buy <i class="twa twa-sparkles"></i> <span class="devide"></span><span>{{ page.price }}</span></a>
-    </div>
-    {{ content }}
-</element>
+<div class="top_image"><img src="{{ page.image | prepend: site.baseurl }}"></div>
+<p class="post_title">{{ page.title }}<br>by {{ page.author }}</p>
+<div class="post_description"><p>{{ page.description }}</p></div>
+<div class="add_button">
+    <a class="buy" href="{{ page.buy | prepend: site.baseurl }}">Buy <i class="twa twa-sparkles"></i> <span class="devide"></span><span>{{ page.price }}</span></a>
+</div>
+{{ content }}
