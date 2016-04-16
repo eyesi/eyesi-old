@@ -1,15 +1,35 @@
+.tags {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: $spacing-unit * 2;
+    padding-left: $spacing-unit * 2;
+    padding-right: $spacing-unit * 2;
+    z-index: $back;
+    display: none;
+}
+
+@media screen and (min-width: $large) {
+    .tags {
+        width: 25%;
+        margin-left: 50%;
+        float: left;
+        display: block;
+    }
+}
+
 .post_title .title {
     padding-top: $spacing-unit * 2;
     padding-left: $spacing-unit * 2;
     padding-right: $spacing-unit * 2;
-    padding-bottom: $spacing-unit * 2;
+    padding-bottom: $spacing-unit * 4;
     font-size: $font-size-larger;
 }
 
 @media screen and (min-width: $large) {
     .post_title .title {
         width: 25%;
-        margin-left: 25%;
+        margin-left: 50%;
         float: left;
     }
 }
@@ -45,4 +65,18 @@
     font-size: $font-size;
     background: #FCEBEA;
     color: $text-color;
+}
+
+/* Type */
+
+.tags li {
+    display: inline-block;
+    float: left;
+    padding-right: $spacing-unit;
+    font-size: $font-size;
+}
+
+.tags a {
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
 }
