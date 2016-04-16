@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  Myrobalan Tea Towel
-author: eyesi
+title:  Myrobalan
+type: Tea Towel
+author: Lydia Lees
+brand: eyesi
 price: $35.00
 buy: https://checkout.trychec.com/myrobalan
 image: /images/myro1.jpg

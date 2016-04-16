@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  California Red Purse
-author: eyesi
+title:  California Red
+type: Purse
+author: Lydia Lees
+brand: eyesi
 price: $85.00
 buy: https://checkout.trychec.com/california
 image: /images/cali1.jpg
