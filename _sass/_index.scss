@@ -24,27 +24,27 @@
     opacity: 1;
 }
 
-.hover:hover .price {
+.index .title {
     position: absolute;
-    bottom: $spacing-unit * 2;
+    bottom: $spacing-unit * 1.5;
+    left: $spacing-unit * 2;
+    font-size: $font-size;
 }
 
 .hover:hover .title {
     position: absolute;
-    top: $spacing-unit * 2;
-}
-
-.index .title {
-    position: absolute;
-    top: $spacing-unit * 1.8;
-    left: $spacing-unit * 2;
-    font-size: $font-size-larger;
+    bottom: $spacing-unit * 2;
 }
 
 .index .price {
     position: absolute;
-    bottom: $spacing-unit * 1.8;
-    left: $spacing-unit * 2;
+    bottom: $spacing-unit * 1.5;
+    right: $spacing-unit * 2;
+}
+
+.hover:hover .price {
+    position: absolute;
+    bottom: $spacing-unit * 2;
 }
 
 .index .background {
@@ -53,8 +53,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: $hover-color;
-    opacity: 0.9;
+    background: rgba(252,235,234,0.9);
+    background: -moz-linear-gradient(bottom, rgba(252,235,234,0.7), rgba(252,235,234,0.9));
+    background: -webkit-linear-gradient(bottom, rgba(252,235,234,0.7), rgba(252,235,234,0.9));
+    background: linear-gradient(to bottom, rgba(252,235,234,0.7), rgba(252,235,234,0.9));
 }
 
 /* Effects */
