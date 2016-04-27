@@ -4,7 +4,6 @@ layout: default
 <section class="post_title">
     {% include tags.html %}
     <p class="title">{{ page.title }}<br>{{ page.type }}</p>
-    <!--<p class="by">{{ page.author }}<br>for {{ page.brand }}</p>-->
     <div class="add_button">
     <a class="buy" href="{{ page.buy | prepend: site.baseurl }}">Buy <i class="twa twa-sparkles"></i> <span class="devide"></span><span>{{ page.price }}</span></a>
     </div>
@@ -12,6 +11,7 @@ layout: default
 <section class="post_image">
     <img src="{{ page.image | prepend: site.baseurl }}">
 </section>
+<p class="by">{{ page.author }}<br>for {{ page.brand }}</p>
 <section class="post_description">
     <p>{{ page.description }}</p>
 </section>
