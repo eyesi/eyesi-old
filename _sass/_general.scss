@@ -8,14 +8,11 @@
     padding: 0;
     border: 0;
     outline: 0;
-    vertical-align: baseline;
     -webkit-font-smoothing: antialiased;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
+    vertical-align: middle;
 }
 
 .container {
@@ -25,9 +22,9 @@ img {
 }
 
 .content {
+    width: 100%;
     position: absolute;
     background: $soft-color;
-    margin-top: $spacer;
     margin-bottom: $spacer;
 }
 
