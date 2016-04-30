@@ -1,31 +1,29 @@
 ---
 layout: default
 ---
-<section class="index">
+<section class="filter">
     <ul>
         {% for post in site.categories[page.category] %}
         <li>
             <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="index_image"><img src="{{ post.image | prepend: site.baseurl }}">
-                    <div class="hover">
-                        <p class="title">{{ post.title }} {{ post.type }}</p>
-                        <p class="price">{{ post.price }}</p>
-                        <span class="background"></span>
-                    </div>
-                </div>
+                <figure>
+                    <img src="{{ post.image | prepend: site.baseurl }}" data-adaptive-background>
+                    <figcaption>
+                        <p>{{ post.title }} {{ post.type }} — {{ post.price }}</p>
+                    </figcaption>
+                </figure>
             </a>
         </li>
         {% endfor %}
         {% for post in site.tags[page.tag] %}
         <li>
             <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="index_image"><img src="{{ post.image | prepend: site.baseurl }}">
-                    <div class="hover">
-                        <p class="title">{{ post.title }} {{ post.type }}</p>
-                        <p class="price">{{ post.price }}</p>
-                        <span class="background"></span>
-                    </div>
-                </div>
+                <figure>
+                    <img src="{{ post.image | prepend: site.baseurl }}" data-adaptive-background>
+                    <figcaption>
+                        <p>{{ post.title }} {{ post.type }} — {{ post.price }}</p>
+                    </figcaption>
+                </figure>
             </a>
         </li>
         {% endfor %}

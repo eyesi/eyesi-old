@@ -21,16 +21,16 @@
 .post_title header {
     display: block;
     position: absolute;
-    top: 0;
+    top: 47.5vh;
     left: 0;
-    width: 100%;
+    transform: translate(0, -50%);
     padding: $spacing-unit * 2;
-    text-align: center;
-    z-index: 0;
+    z-index: $front;
 }
 
 .post_title .title {
-    font-size: $font-size-larger;
+    font-size: 30px;
+    line-height: 1.2em;
 }
 
 .add_button {
@@ -44,7 +44,7 @@
 
 .add_button a {
     display: block;
-    padding: 0 1.1em;
+    padding: 0 15px;
     line-height: 2.8em;
     height: 2.7em;
     border-radius: 2.8em;
