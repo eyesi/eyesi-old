@@ -1,28 +1,26 @@
-.index {
+.filter {
     display: block;
     position: relative;
 }
 
-.index ul {
+.filter ul {
     display: block;
     overflow: hidden;
     width: 100%;
+    padding-top: 12.5vh;
+    padding-bottom: 10vh;
 }
 
-.index li:nth-child(3n+1) {
-    width: 100vw;
-}
-
-.index li {
+.filter li {
     display: inline-block;
     position: relative;
     float: left;
-    width: 50%;
-    height: 95vh;
+    width: 25%;
+    height: 25vw;
     overflow: visible;
 }
 
-.index li a {
+.filter li a {
     display: block;
     position: absolute;
     top: 0;
@@ -31,41 +29,36 @@
     left: 0;
 }
 
-.index figure {
+.filter figure {
     display: block;
     position: relative;
     width: 100%;
     height: 100%;
     overflow: visible;
     margin: 0;
-    background: #FCEBEA;
 }
 
-.index img {
+.filter img {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 60%;
+    max-height: 60%;
     height: auto;
     width: auto;
     transform-origin: top left;
 }
 
-.index figcaption {
+.filter figcaption {
     position: absolute;
-    max-width: 80%;
-    margin: 20px 0;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    z-index: 1;
     bottom: 0;
-    left: 50%;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px 0 20px;
+    margin: 0 !important;
     text-align: center;
     cursor: pointer;
-    transform: translate(-50%, 0);
 }
 
 /* Type */
@@ -105,18 +98,6 @@
 .hover:hover .price {
     position: absolute;
     bottom: $spacing-unit * 2;
-}
-
-.index .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(252,235,234,0.9);
-    background: -moz-linear-gradient(top, rgba(252,235,234,0.7), rgba(252,235,234,0.9));
-    background: -webkit-linear-gradient(top, rgba(252,235,234,0.7), rgba(252,235,234,0.9));
-    background: linear-gradient(to top, rgba(252,235,234,0.7), rgba(252,235,234,0.9));
 }
 
 /* Effects */

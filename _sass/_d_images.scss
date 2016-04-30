@@ -1,23 +1,17 @@
-.post_image {
-    padding-bottom: 5px;
+.post_images {
+    display: block;
+    position: relative;
+    width: 100%;
 }
 
-.post_image:last-child {
+.post_images img {
+    max-width: 100%;
+    padding: $spacing-unit * 2;
     display: inline-block;
     float: left;
-    padding-bottom: 0;
 }
 
 @media screen and (min-width: $large) {
-    .post_image {
-        padding: 0;
-    }
-}
-
-@media screen and (min-width: $large) {
-    .frame {
-        padding: 30px 60px;
-    }
     .half {
         width: 50%;
     }

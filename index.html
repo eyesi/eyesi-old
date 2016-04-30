@@ -6,13 +6,12 @@ layout: default
         {% for post in site.posts %}
         <li>
             <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="index_image"><img src="{{ post.image | prepend: site.baseurl }}">
-                    <div class="hover">
-                        <p class="title">{{ post.title }} {{ post.type }}</p>
-                        <p class="price">{{ post.price }}</p>
-                        <span class="background"></span>
-                    </div>
-                </div>
+                <figure>
+                    <img src="{{ post.image | prepend: site.baseurl }}" data-adaptive-background>
+                    <figcaption>
+                        <p>{{ post.title }} {{ post.type }} — {{ post.price }}</p>
+                    </figcaption>
+                </figure>
             </a>
         </li>
         {% endfor %}

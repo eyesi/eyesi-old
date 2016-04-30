@@ -18,20 +18,19 @@
     }
 }
 
-.post_title .title {
-    padding-top: $spacing-unit * 2;
-    padding-left: $spacing-unit * 2;
-    padding-right: $spacing-unit * 2;
-    padding-bottom: $spacing-unit * 4;
-    font-size: $font-size-larger;
+.post_title header {
+    display: block;
+    position: absolute;
+    top: 47.5vh;
+    left: 0;
+    transform: translate(0, -50%);
+    padding: $spacing-unit * 2;
+    z-index: $front;
 }
 
-@media screen and (min-width: $large) {
-    .post_title .title {
-        width: 25%;
-        margin-left: 50%;
-        float: left;
-    }
+.post_title .title {
+    font-size: 30px;
+    line-height: 1.2em;
 }
 
 .add_button {
@@ -40,18 +39,12 @@
     left: 0;
     padding-left: $spacing-unit;
     padding-bottom: $spacing-unit;
-}
-
-@media screen and (min-width: $large) {
-    .add_button {
-        padding-left: $spacing-unit;
-        padding-bottom: $spacing-unit;
-    }
+    z-index: $front;
 }
 
 .add_button a {
     display: block;
-    padding: 0 1.1em;
+    padding: 0 15px;
     line-height: 2.8em;
     height: 2.7em;
     border-radius: 2.8em;
