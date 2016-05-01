@@ -18,7 +18,7 @@
     }
 }
 
-.post_title header {
+.post_title {
     display: block;
     position: absolute;
     top: 47.5vh;
@@ -51,18 +51,4 @@
     font-size: $font-size;
     background: #FCEBEA;
     color: $text-color;
-}
-
-/* Type */
-
-.tags li {
-    display: inline-block;
-    float: left;
-    padding-right: $spacing-unit;
-    font-size: $font-size;
-}
-
-.tags a {
-    padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit;
 }

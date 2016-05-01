@@ -13,6 +13,14 @@
     width: 100vw;
 }
 
+.index li:nth-child(5n+0) {
+    background: #ebf3f8;
+}
+
+.index li:nth-child(4n+0) {
+    background: #d9d9d9;
+}
+
 .index li {
     display: inline-block;
     position: relative;
@@ -38,7 +46,6 @@
     height: 100%;
     overflow: visible;
     margin: 0;
-    background: #FCEBEA;
 }
 
 .index img {
@@ -66,6 +73,7 @@
     text-align: center;
     cursor: pointer;
     transform: translate(-50%, 0);
+    opacity: 0.75;
 }
 
 /* Type */
