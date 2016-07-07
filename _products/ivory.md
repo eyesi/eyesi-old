@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: product
 title: Ivory
 type: Card Wallet
 author: Lydia Lees
@@ -13,5 +13,5 @@ tag: [Leather]
 permalink: /ivory
 background: #FFF5F5
 ---
-![](/images/ivory2.jpg){: .post_image .fit }
-![](/images/ivory3.jpg){: .post_image .half }
+![](/images/ivory2.jpg){: .product_image .fit }
+![](/images/ivory3.jpg){: .product_image .half }

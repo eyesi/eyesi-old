@@ -4,3 +4,6 @@ description: "eyesi is an experimental design company. We design products that s
 baseurl: ""
 url: ""
 markdown: kramdown
+collections:
+    - products
+api_key: ZmVmZjU0NjMtZmI4OS00ODc1LTg5MGItMjIwOTEzMTQ2MThhNjM1OTEyODY3MjEyNDUyNTYx

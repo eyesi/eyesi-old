@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<section class="product_title">
+    <p class="title">{{ product.title }}<br>{{ product.type }}</p>
+</section>
+<div class="add_button">
+    <a class="buy" href="{{ product.buy | prepend: site.baseurl }}">Buy <i class="twa twa-sparkles"></i> <span>{{ product.price }}</span></a>
+</div>
+<section class="product_image">
+    <ul>
+        <li>
+            <figure>
+                <img src="{{ product.image | prepend: site.baseurl }}">
+            </figure>
+        </li>
+    </ul>
+</section>
+<section class="product_description">
+    <p class="description">{{ product.description }}</p>
+    <p class="by">{{ product.author }} for {{ product.brand }}</p>
+    <p class="details">{{ product.details }}</p>
+</section>
+<section class="product_images">
+{{ content }}
+</section>

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: product
 title: Blue
 type: Bread Wrap
 author: Lydia Lees
@@ -12,7 +12,7 @@ category: [Linens]
 tag: [Textile]
 permalink: /wrap
 ---
-![](/images/wrap2.jpg){: .post_image .fit }
-![](/images/wrap3.jpg){: .post_image .half }
-![](/images/wrap4.jpg){: .post_image .half }
-![](/images/wrap5.jpg){: .post_image .half }
+![](/images/wrap2.jpg){: .product_image .fit }
+![](/images/wrap3.jpg){: .product_image .half }
+![](/images/wrap4.jpg){: .product_image .half }
+![](/images/wrap5.jpg){: .product_image .half }

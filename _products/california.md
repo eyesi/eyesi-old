@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: product
 title: California Red
 type: Purse
 author: Lydia Lees
@@ -12,7 +12,7 @@ category: [Purses]
 tag: [Textile]
 permalink: /california
 ---
-![](/images/cali2.jpg){: .post_image .fit }
-![](/images/cali3.jpg){: .post_image .half }
-![](/images/cali4.jpg){: .post_image .half }
-![](/images/cali5.jpg){: .post_image .half }
+![](/images/cali2.jpg){: .product_image .fit }
+![](/images/cali3.jpg){: .product_image .half }
+![](/images/cali4.jpg){: .product_image .half }
+![](/images/cali5.jpg){: .product_image .half }

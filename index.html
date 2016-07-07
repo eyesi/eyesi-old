@@ -3,13 +3,13 @@ layout: default
 ---
 <section class="index">
     <ul>
-        {% for post in site.posts %}
+        {% for product in site.products %}
         <li>
-            <a href="{{ post.url | prepend: site.baseurl }}">
+            <a href="{{ product.url | prepend: site.baseurl }}">
                 <figure>
-                    <img src="{{ post.image | prepend: site.baseurl }}" data-adaptive-background>
+                    <img src="{{ product.image | prepend: site.baseurl }}" data-adaptive-background>
                     <figcaption>
-                        <p>{{ post.title }} {{ post.type }}, {{ post.price }}</p>
+                        <p>{{ product.title }} {{ product.type }}, {{ product.price }}</p>
                     </figcaption>
                 </figure>
             </a>

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: product
 title: Fleckle
 type: Trivet
 author: Tom Lees
@@ -13,6 +13,6 @@ category: [Surfaces]
 tag: [Timber]
 permalink: /fleckle
 ---
-![](/images/fleckle3.jpg){: .post_image .half }
-![](/images/fleckle4.jpg){: .post_image .quarter }
-![](/images/fleckle2.jpg){: .post_image }
+![](/images/fleckle3.jpg){: .product_image .half }
+![](/images/fleckle4.jpg){: .product_image .quarter }
+![](/images/fleckle2.jpg){: .product_image }

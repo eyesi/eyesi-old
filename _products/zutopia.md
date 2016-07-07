@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: product
 title: Zutopia
 type: Tea Towel
 author: Lydia Lees
@@ -12,5 +12,5 @@ category: [Linens]
 tag: [Textile]
 permalink: /zutopia
 ---
-![](/images/zuto2.jpg){: .post_image .fit }
-![](/images/zuto3.jpg){: .post_image .half }
+![](/images/zuto2.jpg){: .product_image .fit }
+![](/images/zuto3.jpg){: .product_image .half }

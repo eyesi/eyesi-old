@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: product
 title: I'm Electric
 type: Tea Towel
 author: Lydia Lees
@@ -12,5 +12,5 @@ category: [Linens]
 tag: [Textile]
 permalink: /i'melectric
 ---
-![](/images/electric1.jpg){: .post_image .more }
-![](/images/electric2.jpg){: .post_image .half }
+![](/images/electric1.jpg){: .product_image .more }
+![](/images/electric2.jpg){: .product_image .half }

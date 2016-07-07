@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: product
 title: Pluto
 type: Trivet
 author: Tom Lees
@@ -12,5 +12,5 @@ category: [Surfaces]
 tag: [Timber]
 permalink: /pluto
 ---
-![](/images/pluto1.jpg){: .post_image .frame }
-![](/images/pluto3.jpg){: .post_image .half }
+![](/images/pluto1.jpg){: .product_image .frame }
+![](/images/pluto3.jpg){: .product_image .half }

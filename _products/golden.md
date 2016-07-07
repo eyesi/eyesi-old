@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: product
 title: You're Golden
 type: Coin Purse
 author: Lydia Lees
@@ -12,4 +12,4 @@ category: [Purses]
 tag: [Textile]
 permalink: /golden
 ---
-![](/images/golden2.jpg){: .post_image .half }
+![](/images/golden2.jpg){: .product_image .half }

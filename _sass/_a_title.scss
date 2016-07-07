@@ -18,7 +18,7 @@
     }
 }
 
-.post_title {
+.product_title {
     display: block;
     position: absolute;
     top: 47.5vh;
@@ -28,7 +28,7 @@
     z-index: $front;
 }
 
-.post_title .title {
+.product_title .title {
     font-size: 30px;
     line-height: 1.35em;
 }

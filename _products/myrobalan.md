@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: product
 title: Myrobalan
 type: Tea Towel
 author: Lydia Lees
@@ -12,6 +12,6 @@ category: [Linens]
 tag: [Textile]
 permalink: /myrobalan
 ---
-![](/images/myro2.jpg){: .post_image .fit }
-![](/images/myro3.jpg){: .post_image .half }
-![](/images/myro4.jpg){: .post_image .half }
+![](/images/myro2.jpg){: .product_image .fit }
+![](/images/myro3.jpg){: .product_image .half }
+![](/images/myro4.jpg){: .product_image .half }

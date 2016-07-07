@@ -3,25 +3,25 @@ layout: default
 ---
 <section class="filter">
     <ul>
-        {% for post in site.categories[page.category] %}
+        {% for product in site.categories[page.category] %}
         <li>
-            <a href="{{ post.url | prepend: site.baseurl }}">
+            <a href="{{ product.url | prepend: site.baseurl }}">
                 <figure>
-                    <img src="{{ post.image | prepend: site.baseurl }}" data-adaptive-background>
+                    <img src="{{ product.image | prepend: site.baseurl }}" data-adaptive-background>
                     <figcaption>
-                        <p>{{ post.title }} {{ post.type }}<br>{{ post.price }}</p>
+                        <p>{{ product.title }} {{ product.type }}<br>{{ product.price }}</p>
                     </figcaption>
                 </figure>
             </a>
         </li>
         {% endfor %}
-        {% for post in site.tags[page.tag] %}
+        {% for product in site.tags[page.tag] %}
         <li>
-            <a href="{{ post.url | prepend: site.baseurl }}">
+            <a href="{{ product.url | prepend: site.baseurl }}">
                 <figure>
-                    <img src="{{ post.image | prepend: site.baseurl }}" data-adaptive-background>
+                    <img src="{{ product.image | prepend: site.baseurl }}" data-adaptive-background>
                     <figcaption>
-                        <p>{{ post.title }} {{ post.type }}<br>{{ post.price }}</p>
+                        <p>{{ product.title }} {{ product.type }}<br>{{ product.price }}</p>
                     </figcaption>
                 </figure>
             </a>
