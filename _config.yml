@@ -5,5 +5,6 @@ baseurl: ""
 url: ""
 markdown: kramdown
 collections:
-    - products
+    products:
+    output: true
 api_key: ZmVmZjU0NjMtZmI4OS00ODc1LTg5MGItMjIwOTEzMTQ2MThhNjM1OTEyODY3MjEyNDUyNTYx
